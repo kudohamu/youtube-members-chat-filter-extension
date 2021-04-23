@@ -1,0 +1,11 @@
+{
+  "name": "youtube-ez-comment-filter",
+  "version": "1.0.0",
+  "description": "Youtubeのコメント欄をフィルタする拡張機能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kudohamu",
+  "license": "MIT"
+}

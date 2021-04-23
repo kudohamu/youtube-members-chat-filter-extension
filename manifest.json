@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube EZ Comment Filter",
+  "version": "1.0.0",
+  "description": "Youtubeのコメント欄をフィルタする拡張機能です",
+  "content_scripts": [{
+    "matches": ["https://www.youtube.com/watch*"],
+    "all_frames": true,
+    "js": ["contentScript.js"]
+  }]
+}
