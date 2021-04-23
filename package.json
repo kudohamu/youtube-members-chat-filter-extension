@@ -5,15 +5,19 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.config.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "author": "kudohamu",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@types/copy-webpack-plugin": "^6.4.1",
     "@types/node": "^14.14.41",
     "@types/webpack": "^5.28.0",
     "copy-webpack-plugin": "^6.4.1",
+    "husky": "^6.0.0",
     "ts-loader": "^8.1.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4",
