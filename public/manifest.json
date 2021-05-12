@@ -1,11 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "Youtube EZ Comment Filter",
+  "name": "Youtube Members Only Comment Filter",
   "version": "1.0.0",
   "description": "Youtubeのコメント欄をフィルタする拡張機能です",
   "content_scripts": [{
-    "matches": ["https://www.youtube.com/watch*"],
+    "matches": [
+      "https://www.youtube.com/live_chat_replay?*",
+      "https://www.youtube.com/live_chat?*"
+    ],
     "all_frames": true,
-    "js": ["content.js"]
+    "js": ["content.js"],
+    "css": ["content.css"]
   }]
 }

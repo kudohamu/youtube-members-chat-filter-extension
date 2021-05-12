@@ -1,0 +1,11 @@
+.youtube-ez-comment-filter {
+  a[data-ext-ytm-selected="false"] {
+    background-color: var(--yt-spec-brand-background-primary) !important;
+  }
+
+  &[data-ext-ytm-active="true"] {
+    yt-live-chat-text-message-renderer[author-type=""] {
+      display: none;
+    }
+  }
+}
