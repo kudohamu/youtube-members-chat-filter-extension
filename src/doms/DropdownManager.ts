@@ -173,13 +173,13 @@ export class DropdownManager {
 
     const title = document.createElement('div');
     title.setAttribute('class', 'item style-scope yt-dropdown-menu');
-    title.innerText = '👑メンバーのコメントに限定';
+    title.innerText = chrome.i18n.getMessage('member_filter_menu_title');
     body.appendChild(title);
 
     const description = document.createElement('div');
     description.setAttribute('id', 'subtitle');
     description.setAttribute('class', 'style-scope yt-dropdown-menu');
-    description.innerText = '上位チャットのうちメンバーのコメントのみが表示されます';
+    description.innerText = chrome.i18n.getMessage('member_filter_menu_desc');
     body.appendChild(description);
 
     const continuation = document.createElement('yt-reload-continuation');
