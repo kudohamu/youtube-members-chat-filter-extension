@@ -6,9 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 export const common: Configuration = {
   target: 'electron-main',
   entry: {
-    content: [
-      path.resolve(__dirname, 'src', 'entries', 'content.ts')
-    ]
+    content: [path.resolve(__dirname, 'src', 'content.ts')],
   },
   module: {
     rules: [
@@ -18,12 +16,8 @@ export const common: Configuration = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "sass-loader",
-        ],
-      }
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+      },
     ],
   },
   resolve: {
@@ -36,13 +30,16 @@ export const common: Configuration = {
   plugins: [
     new MiniCssExtractPlugin(),
     new CopyPlugin({
-      patterns: [{
-        from: path.resolve(__dirname, 'public', 'manifest.json'),
-        to: path.resolve(__dirname, 'dist', 'manifest.json')
-      }, {
-        from: path.resolve(__dirname, 'public', '_locales'),
-        to: path.resolve(__dirname, 'dist', '_locales')
-      }]
-    })
-  ]
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public', 'manifest.json'),
+          to: path.resolve(__dirname, 'dist', 'manifest.json'),
+        },
+        {
+          from: path.resolve(__dirname, 'public', '_locales'),
+          to: path.resolve(__dirname, 'dist', '_locales'),
+        },
+      ],
+    }),
+  ],
 };

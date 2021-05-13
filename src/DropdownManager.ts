@@ -37,7 +37,7 @@ export class DropdownManager {
     this.handleShowDropdown();
     observer.observe(viewSelector, {
       childList: true,
-      subtree: true
+      subtree: true,
     });
   }
 
@@ -68,7 +68,7 @@ export class DropdownManager {
       if (this.tmpIndex) {
         this.tmpIndex = null;
         return;
-      };
+      }
 
       this.activeIndex = 0;
       this.onDeactivate();
@@ -79,7 +79,7 @@ export class DropdownManager {
       if (this.tmpIndex) {
         this.tmpIndex = null;
         return;
-      };
+      }
 
       this.activeIndex = 1;
       this.onDeactivate();
@@ -102,10 +102,12 @@ export class DropdownManager {
    * メニューの全項目のスタイルを更新する
    */
   private updateMenuItemsStyles(menu: Element) {
-    Array.from(menu.children).slice(0, menu.children.length - 1).forEach((item, index) => {
-      item.setAttribute('data-ytm-index', `${index}`);
-      this.updateMenuItemStyles(item);
-    });
+    Array.from(menu.children)
+      .slice(0, menu.children.length - 1)
+      .forEach((item, index) => {
+        item.setAttribute('data-ytm-index', `${index}`);
+        this.updateMenuItemStyles(item);
+      });
   }
 
   /**
@@ -131,13 +133,15 @@ export class DropdownManager {
     const menu = document.querySelector('tp-yt-paper-listbox#menu');
     if (!menu) throw new Error('tp-yt-paper-listbox#menu is not found');
 
-    Array.from(menu.children).slice(0, menu.children.length - 1).forEach((item) => {
-      if (item.getAttribute('data-ext-ytm-selected') !== 'true') return;
+    Array.from(menu.children)
+      .slice(0, menu.children.length - 1)
+      .forEach((item) => {
+        if (item.getAttribute('data-ext-ytm-selected') !== 'true') return;
 
-      const title = item.querySelector('tp-yt-paper-item-body > div:first-child');
-      if (!title) return;
-      label.textContent = title.textContent;
-    });
+        const title = item.querySelector('tp-yt-paper-item-body > div:first-child');
+        if (!title) return;
+        label.textContent = title.textContent;
+      });
   }
 
   /**

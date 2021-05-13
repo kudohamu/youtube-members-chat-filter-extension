@@ -4,9 +4,9 @@
  */
 
 import './content.scss';
-import { rootClassName } from '../constants/classNames';
-import { DropdownManager } from '../doms';
-import { printError } from '../utils/io';
+import { rootClassName } from './constants';
+import { DropdownManager } from './DropdownManager';
+import { printError } from './utils';
 
 // メンバーフィルタ用のメニューが選択されたらコメント欄をフィルタする
 async function execute() {
@@ -17,7 +17,7 @@ async function execute() {
 
     const manager = new DropdownManager({
       onActivate: () => document.body.setAttribute('data-ext-ytm-active', 'true'),
-      onDeactivate: () => document.body.setAttribute('data-ext-ytm-active', 'false')
+      onDeactivate: () => document.body.setAttribute('data-ext-ytm-active', 'false'),
     });
     manager.start();
   } catch (e) {
