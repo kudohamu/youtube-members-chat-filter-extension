@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>拡張</title>
+    <defs>
+        <linearGradient x1="50%" y1="173.563087%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFA3A3" offset="0%"></stop>
+            <stop stop-color="#D00000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF5656" offset="0%"></stop>
+            <stop stop-color="#EB5D5D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="拡張" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="コメントマーク" transform="translate(0.000000, 24.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="128" height="72" rx="4"></rect>
+            <polygon id="Triangle" fill="url(#linearGradient-2)" transform="translate(64.500000, 79.000000) rotate(180.000000) translate(-64.500000, -79.000000) " points="64.5 72 77 86 52 86"></polygon>
+        </g>
+        <g id="案2" transform="translate(38.000000, 33.000000)">
+            <g id="gpp_good_white_48dp" transform="translate(0.000000, 1.000000)">
+                <polygon id="Path" points="0 0 56 0 56 56 0 56"></polygon>
+                <path d="M24.88125,4.30495077 L11.00625,9.73856397 C9.2025,10.4630457 8,12.2501007 8,14.2786497 L8,25.6530133 C8,37.8484563 15.885625,49.2228199 26.5,52 C37.114375,49.2228199 45,37.8484563 45,25.6530133 L45,14.2786497 C45,12.2742501 43.7975,10.4630457 41.99375,9.76271336 L28.11875,4.32910016 C27.078125,3.8944111 25.921875,3.8944111 24.88125,4.30495077 Z M22.406875,34.6607365 L17.504375,29.5410654 C16.6025,28.5992391 16.6025,27.0778274 17.504375,26.1360012 L17.504375,26.1360012 C18.40625,25.1941749 19.863125,25.1941749 20.765,26.1360012 L24.025625,29.5410654 L32.211875,20.9921807 C33.11375,20.0503544 34.570625,20.0503544 35.4725,20.9921807 L35.4725,20.9921807 C36.374375,21.9340069 36.374375,23.4554186 35.4725,24.3972449 L25.6675,34.6365871 C24.78875,35.6025628 23.30875,35.6025628 22.406875,34.6607365 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(36.474874, 8.131728) rotate(45.000000) translate(-36.474874, -8.131728) " x="34.9748737" y="-1.86827202" width="3" height="20" rx="1.5"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(16.474874, 8.131728) rotate(-45.000000) translate(-16.474874, -8.131728) " x="14.9748737" y="-1.86827202" width="3" height="20" rx="1.5"></rect>
+        </g>
+    </g>
+</svg>

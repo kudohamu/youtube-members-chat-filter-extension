@@ -39,6 +39,18 @@ export const common: Configuration = {
           from: path.resolve(__dirname, 'public', '_locales'),
           to: path.resolve(__dirname, 'dist', '_locales'),
         },
+        {
+          from: path.resolve(__dirname, 'public', 'icons', 'icon16.png'),
+          to: path.resolve(__dirname, 'dist', 'icon16.png'),
+        },
+        {
+          from: path.resolve(__dirname, 'public', 'icons', 'icon48.png'),
+          to: path.resolve(__dirname, 'dist', 'icon48.png'),
+        },
+        {
+          from: path.resolve(__dirname, 'public', 'icons', 'icon128.png'),
+          to: path.resolve(__dirname, 'dist', 'icon128.png'),
+        },
       ],
     }),
   ],
