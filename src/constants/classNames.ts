@@ -1,1 +1,1 @@
-export const rootClassName = 'youtube-ez-comment-filter';
+export const rootClassName = 'ext-youtube-members-chat-filter';

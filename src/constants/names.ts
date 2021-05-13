@@ -1,1 +1,1 @@
-export const appName = 'Youtube EZ Comment Filter';
+export const appName = 'Youtube Member\'s Chat Filter';
