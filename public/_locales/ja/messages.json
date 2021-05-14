@@ -3,7 +3,7 @@
     "message": "Youtubeのチャット欄にメンバーによるチャットのみ表示できるようになるメニューを追加する拡張機能です。"
   },
   "member_filter_menu_title": {
-    "message": "👑メンバーのコメントに限定"
+    "message": "メンバーのコメントに限定"
   },
   "member_filter_menu_desc": {
     "message": "上位チャットのうちメンバーのコメントのみが表示されます"

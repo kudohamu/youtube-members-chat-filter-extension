@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Youtube Members' Chat Filter",
   "version": "1.0.0",
   "description": "__MSG_ext_desc__",
@@ -15,6 +15,12 @@
       "all_frames": true,
       "js": ["content.js"],
       "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["resources/icon.svg"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

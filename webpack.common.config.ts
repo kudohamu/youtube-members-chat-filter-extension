@@ -51,6 +51,10 @@ export const common: Configuration = {
           from: path.resolve(__dirname, 'public', 'icons', 'icon128.png'),
           to: path.resolve(__dirname, 'dist', 'icon128.png'),
         },
+        {
+          from: path.resolve(__dirname, 'resources', 'icon.svg'),
+          to: path.resolve(__dirname, 'dist', 'resources', 'icon.svg'),
+        },
       ],
     }),
   ],

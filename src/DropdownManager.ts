@@ -140,7 +140,8 @@ export class DropdownManager {
 
         const title = item.querySelector('tp-yt-paper-item-body > div:first-child');
         if (!title) return;
-        label.textContent = title.textContent;
+        label.setAttribute('style', 'display: flex; justify-content: flex-start; align-items: center;');
+        label.innerHTML = title.innerHTML;
       });
   }
 
@@ -177,8 +178,17 @@ export class DropdownManager {
 
     const title = document.createElement('div');
     title.setAttribute('class', 'item style-scope yt-dropdown-menu');
-    title.innerText = chrome.i18n.getMessage('member_filter_menu_title');
+    title.setAttribute('style', 'display: flex; justify-content: flex-start; align-items: center;');
     body.appendChild(title);
+
+    const icon = document.createElement('img');
+    icon.setAttribute('src', chrome.runtime.getURL('resources/icon.svg'));
+    icon.setAttribute('style', 'width: 24px; height: 24px; margin-right: 6px');
+    title.appendChild(icon);
+
+    const text = document.createElement('span');
+    text.innerText = chrome.i18n.getMessage('member_filter_menu_title');
+    title.appendChild(text);
 
     const description = document.createElement('div');
     description.setAttribute('id', 'subtitle');
