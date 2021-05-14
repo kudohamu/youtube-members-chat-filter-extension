@@ -183,7 +183,7 @@ export class DropdownManager {
 
     const icon = document.createElement('img');
     icon.setAttribute('src', chrome.runtime.getURL('resources/icon.svg'));
-    icon.setAttribute('style', 'width: 24px; height: 24px; margin-right: 6px');
+    icon.setAttribute('style', 'width: 22px; height: 22px; margin-right: 6px; margin-bottom: 2px;');
     title.appendChild(icon);
 
     const text = document.createElement('span');
