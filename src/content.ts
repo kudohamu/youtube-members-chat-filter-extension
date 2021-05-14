@@ -12,7 +12,6 @@ import { printError } from './utils';
 async function execute() {
   // Youtube本体のエラー監視に迷惑をかけないように全体をtry-catchする
   try {
-    console.warn('loaded!!!');
     document.body.classList.add(rootClassName);
 
     const manager = new DropdownManager({
