@@ -1,5 +1,5 @@
 /**
- * YoutubeのDOMを触ることができるスクリプト
+ * YouTubeのDOMを触ることができるスクリプト
  * ここでコメント欄のDOMを見てフィルタリングを行う
  */
 
@@ -10,7 +10,7 @@ import { printError } from './utils';
 
 // メンバーフィルタ用のメニューが選択されたらコメント欄をフィルタする
 async function execute() {
-  // Youtube本体のエラー監視に迷惑をかけないように全体をtry-catchする
+  // YouTube本体のエラー監視に迷惑をかけないように全体をtry-catchする
   try {
     document.body.classList.add(rootClassName);
 

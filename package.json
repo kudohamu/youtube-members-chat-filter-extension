@@ -1,7 +1,7 @@
 {
   "name": "youtube-members-chat-filter-extension",
   "version": "1.0.0",
-  "description": "Youtubeのチャット欄にメンバーによるチャットのみ表示できるようになるメニューを追加する拡張機能",
+  "description": "YouTubeのチャット欄にメンバーによるチャットのみ表示できるようになるメニューを追加する拡張機能",
   "main": "index.js",
   "scripts": {
     "build": "run-s clean build:*",

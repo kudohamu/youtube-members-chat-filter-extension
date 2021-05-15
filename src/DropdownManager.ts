@@ -4,7 +4,7 @@ export type DropdownManagerParameter = {
 };
 
 /**
- * Youtubeのドロップダウンメニューの内容を管理するクラス
+ * YouTubeのドロップダウンメニューの内容を管理するクラス
  */
 export class DropdownManager {
   private activeIndex: number = 0;
